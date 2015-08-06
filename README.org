@@ -1,0 +1,19 @@
+* sensu-plugins-kubernetes
+
+Make sure your Kubernetes setup is a-okay with Sensu!
+
+** Contributing
+
+ - Fork repository
+ - Add functionality and any applicable tests
+ - Ensure all tests pass by executing =bundle exec rake test=
+ - Open a pull request
+
+You may run individual tests by executing =bundle exec rake test TEST=test/external_handler_test.rb=
+
+* License
+
+Copyright 2015 Kel Cecil
+
+Released under the same terms as Sensu (the MIT license); see LICENSE
+for details.

@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require 'sensu-plugin/check/cli'
+
+class TestCheck < Sensu::Plugin::Check::CLI
+
+  option :ok, :short => '-o'
+  option :warn, :short => '-w'
+  option :crit, :short => '-c'
+  option :unknown, :short => '-u'
+  option :fail, :short => '-f'
+  option :override, :short => '-O'
+
+  def run
+    message "Testing, argv = #{argv.join(' ')}"
+    if config[:ok]
+      ok
+    elsif config[:warn]
+      warning
+    elsif config[:crit]
+      critical
+    elsif config[:unknown]
+      unknown
+    elsif config[:fail]
+      raise RuntimeError
+    elsif config[:override]
+      ok "Overriding message"
+    end
+  end
+
+end
