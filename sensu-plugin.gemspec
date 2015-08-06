@@ -12,11 +12,12 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
   s.has_rdoc      = false
   s.require_paths = ['lib']
-  s.files         = Dir['lib/**/*.rb']
+  s.files         = Dir['{bin,lib}/**/*.rb']
   s.test_files    = Dir['test/*.rb']
 
   s.add_dependency('json')
   s.add_dependency('mixlib-cli', '>= 1.1.0')
+  s.add_dependency('kubeclient', '0.3.0')
 
   s.add_development_dependency('rake')
   s.add_development_dependency('minitest')

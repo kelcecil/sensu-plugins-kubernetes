@@ -2,6 +2,15 @@
 
 Make sure your Kubernetes setup is a-okay with Sensu!
 
+**Files
+ - bin/check-kube-nodes-ready.rb
+
+Usage
+---------------------
+```
+: check-kube-nodes-ready.rb -s SERVER -v API_VERSION
+```
+
 ** Contributing
 
  - Fork repository
