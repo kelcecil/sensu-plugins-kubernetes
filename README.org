@@ -1,15 +1,13 @@
 * sensu-plugins-kubernetes
 
-Make sure your Kubernetes setup is a-okay with Sensu!
+*** Make sure your Kubernetes setup is a-okay with Sensu!
 
-**Files
+** Files
  - bin/check-kube-nodes-ready.rb
 
-Usage
----------------------
-```
+** Usage
 : check-kube-nodes-ready.rb -s SERVER -v API_VERSION
-```
+
 
 ** Contributing
 
@@ -20,7 +18,7 @@ Usage
 
 You may run individual tests by executing =bundle exec rake test TEST=test/external_handler_test.rb=
 
-* License
+** License
 
 Copyright 2015 Kel Cecil
 
