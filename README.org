@@ -4,14 +4,22 @@
 
 ** Files
  - bin/check-kube-nodes-ready.rb
+ - bin/check-kube-apiserver-available.rb
 
 ** Usage
 : check-kube-nodes-ready.rb -s SERVER -v API_VERSION
-
+: check-kube-apiserver-available.rb -s SERVER
 
 ** Contributing
 
- - Fork repository
+*** Issues
+
+Let us know what kind of handlers or checks would be helpful for monitoring your Kube cluster by
+submitting an issue!
+
+*** Code
+
+ - Fork repository and create a branch
  - Add functionality and any applicable tests
  - Ensure all tests pass by executing =bundle exec rake test=
  - Open a pull request
